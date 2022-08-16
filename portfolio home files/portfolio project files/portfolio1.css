@@ -1,0 +1,56 @@
+*{
+    box-sizing: border-box;
+}
+body{
+    font-family: Arial, Helvetica, sans-serif;
+        font-size: 1.1rem;
+        margin: 0;
+        background-color:   rgb(99, 99, 192);
+        color: white;
+}
+h2{
+    font-size: 2rem;
+    color: skyblue;
+}
+img{
+    width: 40%;
+    margin-left: 1.5em;
+    margin-top: 1.5em;
+}
+div.container{
+    display: flex;
+    justify-content: space-between;
+}
+div.content{
+    margin-left: 1.5em;
+}
+a{
+    color: skyblue;
+}
+a:hover{
+    transform: scale(1.2);
+    color: white;
+}
+a:visited{
+    color: blue;
+}
+a:visited:hover{
+    color: white;
+}
+@media (max-width:650px){
+    div.container{
+        display: flex;
+        flex-direction: column;
+    }
+    img{
+        width: 55%;
+    }
+    div.content{
+        margin: auto;
+        text-align: center;
+    }
+
+}
+
+
+

@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mass Converter</title>
+
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.min.css" rel="stylesheet">
+
+    <!-- Our CSS -->
+    <link rel="stylesheet" href="mconverter.css">
+</head>
+
+<body>
+    <header>
+        <h1>Mass Converter</h1>
+        <p>Convert mass to grams, kilograms and pounds.</p> 
+    </header>
+<main>
+    <div id="container">
+    <div id="convert">
+       
+        <form method="post" action="somefile.php" id="box">
+            <label for="Enter Mass">Enter Mass:</label>
+            <input type="text" placeholder="Enter mass" id="mass">
+            <input type="submit" value="Convert mass">
+        </form>
+    </div>
+            <div id="answer">
+            <h2 class="disp">Display converted value here</h2>            
+    </div>
+    </div>
+</main>
+    <footer>  
+    <p class="info"> Press the 'K' key for Grams to Kilogram conversion </br>
+        Press the 'G' key for Kilograms to Grams conversion </br>
+        Press the 'P' key for Grams to Pounds conversion</br>
+        Press the 'X' key for Pounds to Grams conversion</br>
+        Press the 'Y' key for Kilograms to Pounds conversion</br>
+        Press the 'Z' key for Pounds to Kilograms conversion</p>
+
+    </footer>
+
+  
+   
+    <script>
+        var convertType = 'kilograms';
+        var heading = document.querySelector('h1');
+        var intro =  document.querySelector('p');
+        var answer = document.getElementById('answer');
+        var box= document.getElementById('box')
+        document.addEventListener('keydown',keycontrols);
+        function keycontrols(event){
+            var key = event.code;
+            if(key == "KeyK"){
+                convertType = 'kilograms'
+                heading.innerHTML = 'Grams to Kilograms converter'
+                intro.innerHTML = 'Convert grams to Kilograms'
+            }
+            else if(key == 'KeyG'){
+                convertType = 'grams'
+                heading.innerHTML = 'Kilograms to Grams converter'
+                intro.innerHTML = 'Convert kilograms to grams'
+            }
+            else if(key == 'KeyP'){
+                convertType = 'pounds'
+                heading.innerHTML = 'Grams to Pounds converter'
+                intro.innerHTML = 'Convert grams to pounds'
+            }
+            else if(key == 'KeyX'){
+                convertType = 'poundstogram'
+                heading.innerHTML = 'Pounds to Grams converter'
+                intro.innerHTML = 'Convert pounds to grams'
+            
+            }
+            else if(key == 'KeyY'){
+                convertType = 'kilogramtopounds'
+                heading.innerHTML = 'Kilograms to Pounds converter'
+                intro.innerHTML = 'Convert kilograms to pounds'
+            }
+            else if(key == 'KeyZ'){
+                convertType = 'poundstokilogram'
+                heading.innerHTML = 'Pounds to Kilograms converter'
+                intro.innerHTML = 'Convert pounds to kilograms'
+            }
+        };
+        box.addEventListener('submit', converter)
+        function converter(event){
+            event.preventDefault();
+            var mass = parseFloat(document.getElementById('mass').value);
+            if(mass){
+                if(convertType == 'kilograms'){
+                    var converted = (mass * 0.001).toFixed(4);
+                    answer.innerHTML = `<h2> ${mass} grams converts to ${converted} kilograms</h2>`
+                }
+                else if( convertType == 'grams'){
+                    var converted = (mass * 1000).toFixed(4);
+                    answer.innerHTML = `<h2> ${mass} kilograms converts to ${converted} grams</h2>`
+                }
+                else if(convertType == 'pounds'){
+                    var converted = (mass * 0.00220462).toFixed(4);
+                    answer.innerHTML = `<h2> ${mass} grams converts to ${converted} pounds</h2>`
+                }
+                else if(convertType == 'poundstogram'){
+                    var converted = (mass * 453.592).toFixed(4);
+                    answer.innerHTML = `<h2> ${mass} pounds converts to ${converted} kilograms</h2>`
+                }
+                else if(convertType == 'kilogramtopounds'){
+                    var converted = (mass * 2.20462).toFixed(4);
+                    answer.innerHTML = `<h2> ${mass} kilograms converts to ${converted} pounds</h2>` 
+                }
+                else if(convertType == 'poundstokilogram'){
+                    var converted = (mass * 0.454).toFixed(4);
+                    answer.innerHTML = `<h2> ${mass} pounds converts to ${converted}kilograms</h2>` 
+                }
+            }
+        };
+    </script>
+</body>
+
+</html>
+
+

@@ -1,0 +1,193 @@
+header{
+    background-image: url(download.png);
+    border: 1px radius pink;
+    border-radius: 15px 15px 0px 0px;
+    height: 180px;
+    text-align: center;
+
+}
+h1{
+    text-align: center;
+    color: maroon;
+}
+body{
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    background-color: pink;
+    height: 100vh;
+}
+nav.home a{
+    display: inline-block;
+    margin-right: 20%;
+    text-decoration: none;
+    border: 2px solid white;
+    background-color: palevioletred;
+    height: 30px;
+    border: 5px;
+    padding: 5px;
+    padding-top: 10px;
+    text-align: center;
+    color: white;
+    width: 100px;
+    border-radius: 5px;
+}
+nav{
+    margin-top: 3%;
+}
+nav.home a:hover{
+    background-color: beige;
+}
+section{
+    color:maroon;
+    background-color: pink;
+}
+.signup{
+
+    border-radius: 2px;
+    width:fit-content;
+
+}
+.login{
+
+    width: 600px;
+    height: 230px;
+    border-radius:25px;
+    margin-left: 350px;
+    margin: 0 auto;
+
+}
+.logintext{
+    text-align: center;
+}
+.logon{
+    text-align: center;
+  
+    border-radius: 2px;
+    width:fit-content;
+}
+.input{
+    height: 25px;
+    width: 120px;
+    display: block;
+    margin-top: 1.5em;
+}
+h2 a{
+    text-decoration: none;
+    color: maroon;
+}
+h2 a:hover{
+    scale: 1.5;
+    background-color: palevioletred;
+    border: 1px solid pink;
+}
+input{
+    display: block;
+    margin-top: 1.5em;
+    height: 25px;
+    width: 200px;
+}
+
+/*nav.options ul{
+    float: left;
+}
+nav.options ul li{
+    margin-right: 100px;
+    float: left;
+    list-style: none;
+    position: relative;
+    width: 100px;
+}*/
+nav.options ul li a{
+    padding: 5px 5px;
+    text-decoration: none;
+    color: maroon;
+    margin-bottom: 1.5em;
+     
+}
+nav.options ul li ul a:hover{
+   background-color: plum;
+    opacity: 1;
+}
+nav.options ul li{
+   margin-bottom: 1.5em;
+   list-style-type: none;
+    
+   }
+/*
+nav.options ul li ul{
+    display: none;
+    position: absolute;
+    background-color: magenta ;
+}
+
+nav.options ul li ul li{
+    width: 150px;
+}
+nav.options ul li:hover ul {
+    display: block; 
+}
+.now{
+    height: fit-content;
+}
+footer{
+   
+   background-color: maroon;
+    text-align: center;
+    height: fit-content;
+    margin-top: 200px;
+}*/
+
+section.footer{
+    background-color: maroon;
+    text-align: center;
+    margin-top: 100px;
+}
+
+section.footer a{
+   text-decoration: none;
+  
+}
+.social-link:hover{
+    text-decoration: underline;
+}
+.social-link{
+    margin-top: -2em;
+    font-weight: 300;
+    color: palevioletred;
+}
+.footer ul.social_list{
+  display: flex;
+ justify-content: center;
+   
+
+}
+.social-list__item{
+    margin-right: 2em;
+    list-style-type: none;
+}
+
+.social-list__link:hover{
+    
+    opacity: .5;
+}
+
+
+  
+.shopnow{
+    display: flex;
+    justify-content: space-between;
+}
+
+.shopnow nav{
+    width: 70%;
+}
+.shopnow div{
+    width: 30%;
+}
+@media only screen and (max-width:650px){
+    .shopnow{
+        display: flex;
+       flex-direction: column;
+    }
+
+}
+

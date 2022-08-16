@@ -1,0 +1,27 @@
+body{
+    background-color: rgb(99, 99, 192);
+}
+div.portfolio{
+    display: grid;
+    grid-template-columns: repeat(3,1fr);
+    justify-items: center;
+    grid-gap: 2em;
+   }
+   .portfolio_item{
+   
+       overflow: hidden;
+   }
+   .portfolio__img{
+       transition: transform 750ms cubic-bezier(.5,0,.5,1),
+       opacity 250ms linear;
+   }
+   
+   .portfolio__img:hover,
+   .portfolio_item:focus .portfolio__img{
+       transform: scale(1.2);
+       opacity: .75;
+   }
+   img{
+       width: 100%;
+   }
+  

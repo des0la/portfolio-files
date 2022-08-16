@@ -1,0 +1,67 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+header{
+    background: -webkit-linear-gradient( rgba(5, 66, 7, 0.696),grey 75%);
+    color: white;
+    text-align: center;
+    height: 120px;
+
+}
+body{
+    font-family: Arial, Helvetica, sans-serif;
+    background-color: lightgray;
+}
+main{
+    margin:auto;
+    display: flex;
+    justify-content: space-between;
+    max-width: 800px;
+}
+form{
+    width: 40%;
+}
+article{
+    width: 45%;
+}
+label{
+    display: block;
+    margin : 15px;
+}
+input{
+    display: block;
+    margin: 10px;
+}
+form button{
+    margin: 10px;
+}
+p{
+    margin: 15px;
+    padding-bottom: 10px;
+}
+h1{
+  padding : 15px;
+}
+h2, h3, h4, h5 {
+    margin: 15px;
+}
+h3{
+    margin : 15px;
+}
+#ordercontainer button{
+    margin: auto;
+}
+img{
+    width: 80%;
+}
+input, #lucnorderdetails button{
+    display: block;
+    width: 80%;
+    box-sizing: border-box;
+    margin-bottom: 1em;
+    padding: 10px;
+    border: 1px solid darkgray;
+}
+l

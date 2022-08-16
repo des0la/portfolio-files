@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Lunch Orders</title>
+    <link rel="stylesheet" href="lunchorder.css">
+    <script src="lunchorder.js" defer></script>
+</head>
+<body>
+    <header>
+        <h1>Lunch Orders for School Kids</h1>
+        <p>Use the form below to fill in the lunch orders for elementry school kids</p>
+    </header>
+    <main>
+        <form id="lunchorderdetails">
+            <label for="childname">Pupil Name</label>
+            <input type="text" id="childname" placeholder="enter name" required>
+
+            <label for="childgrade">Grade</label>
+            <input type="text" id="childgrade" placeholder="enter grade" required>
+
+            <label for="childorder">Lunch Order</label>
+            <input type="text" id="childorder" placeholder="enter order"  required>
+
+            <label for="lunchphoto">Photo</label>
+            <input type="text" id="lunchphoto" placeholder="enter photo url of order">
+
+            <button type="submit">Place Order</button>
+        </form>
+        <article>
+            <h2 id="title">Enter Order Details</h2>
+            <div id="ordercontainer">
+                <div class="orderdetails">
+                    <img src="images.png" alt="order image">
+                    <div class="orderinfo">
+                        <h3 >Pupil Name</h3>
+                        <h4 >Pupil Grade</h4>
+                        <h5 >Pupil Order</h5>
+                        <button>Remove</button>
+                    </div>
+                </div>
+            </div>
+        </article>
+    </main>
+    
+</body>
+</html>

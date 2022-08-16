@@ -1,0 +1,41 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+div{
+    margin: auto;
+    background-color: brown;
+   height: 80px;
+   width: 600px;
+    text-align: center;
+
+}
+#answer{
+    
+    background-color: crimson;
+}
+body{
+    font-family: Arial, Helvetica, sans-serif;
+}
+h2{
+    padding: 20px;
+}
+header{
+    text-align: center;
+    background-color: brown;
+    width: 600px;
+    margin: auto;
+
+}
+#box{
+    padding: 20px;
+}
+.info{
+   text-align: center;
+
+}
+main{
+    min-height: calc(100vh - 113.42px - 36.78px);
+}
+
